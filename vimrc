@@ -52,3 +52,17 @@ endif
 if filereadable("/etc/vim/vimrc.local")
   source /etc/vim/vimrc.local
 endif
+
+call plug#begin('~/.vim/plugged')
+
+"Completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+"Interface
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'airblade/vim-gitgutter'
+Plug 'scrooloose/nerdcommenter'
+
+call plug#end()
+
